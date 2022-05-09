@@ -29,11 +29,9 @@ Months = ["january", "march", "may", "july", "august", "october", "december"]
 y = ["april", "june", "september", "november"]
 if month == "february":
   print("28")
-for x in Months:
-   if x == month:
-     print("31")
-     break;
-for j in y:
-  if j == month:
-     print("30")
-     break;
+elif month in Months:
+  print("31")
+elif month in y:
+  print("30")
+else: 
+  print("not a month")
